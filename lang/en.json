@@ -1,14 +1,16 @@
 {
-  "Hi, I'm Eloi": "Hi, I'm Eloi",
-  "Computer Science student passionate about web development, robotics and mobile applications": "Computer Science student passionate about web development, robotics and mobile applications",
+  "Hello, I'm Eloi": "Hello, I'm Eloi",
+  "Computer Science student passionate about programming, whether it be web development, robotics or mobile applications": "Computer Science student passionate about programming, whether it be web development, robotics or mobile applications",
   "View my projects": "View my projects",
   "Contact me": "Contact me",
   "My Projects": "My Projects",
   "No projects yet.": "No projects yet.",
   "View project": "View project",
   "Skills": "Skills",
-  "Robotics": "Robotics",
-  "Android": "Android",
-  "Web Dev": "Web Dev",
-  "Databases": "Databases"
+  "View on GitHub": "View on GitHub",
+  "View Demo": "View Demo",
+  "Technologies": "Technologies",
+  "About the project": "About the project",
+  "View all projects": "View all projects",
+  "Gallery": "Gallery"
 }
