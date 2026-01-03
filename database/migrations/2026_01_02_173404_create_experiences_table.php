@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title_en');
+            $table->string('title_fr');
             $table->text('description_en')->nullable();
             $table->text('description_fr')->nullable();
             $table->string('technologies')->nullable();
