@@ -63,9 +63,9 @@
             <div class="text-center text-gray-400">
                 <p class="mb-2">&copy; {{ date('Y') }} - My Portfolio</p>
                 <div class="flex justify-center gap-4 text-sm">
-                    <a href="https://github.com/your-username" target="_blank" class="hover:text-blue-400 transition">GitHub</a>
-                    <a href="https://linkedin.com/in/your-profile" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
-                    <a href="mailto:your-email@example.com" class="hover:text-blue-400 transition">Contact</a>
+                    <a href="https://github.com/e-bernier" target="_blank" class="hover:text-blue-400 transition">GitHub</a>
+                    <a href="https://www.linkedin.com/in/eloi-bernier-13310037a/" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
+                    <a href="mailto:eloi.bernier@proton.me" class="hover:text-blue-400 transition">Contact</a>
                 </div>
             </div>
         </div>
