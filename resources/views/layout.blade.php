@@ -16,11 +16,11 @@
     </div>
 
     <!-- Header/Navigation -->
-    <nav class="sticky top-0 z-20 text-gray-300">
+    <nav id="header" class="sticky top-0 z-20 text-gray-400">
         <div class="max-w-4xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Home -->
-                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="text-xl font-bold hover:text-white transition flex items-center gap-2">
+                <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="px-3 py-1.5 rounded transition text-xl font-bold bg-gray-900 hover:text-white hover:bg-gray-800 flex items-center gap-2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                         <polyline points="9 22 9 12 15 12 15 22"></polyline>
@@ -35,11 +35,11 @@
                 <!-- Language selection -->
                 <div class="flex items-center gap-2">
                     <a href="{{ route(Route::currentRouteName(), array_merge(Route::current()->parameters(), ['locale' => 'fr'])) }}" 
-                    class="px-3 py-1.5 rounded transition {{ app()->getLocale() == 'fr' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800' }}">
+                    class="px-3 py-1.5 rounded transition {{ app()->getLocale() == 'fr' ? 'bg-blue-600 text-white' : 'text-gray-400 bg-gray-900 hover:text-white hover:bg-gray-800' }}">
                         FR
                     </a>
                     <a href="{{ route(Route::currentRouteName(), array_merge(Route::current()->parameters(), ['locale' => 'en'])) }}" 
-                    class="px-3 py-1.5 rounded transition {{ app()->getLocale() == 'en' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800' }}">
+                    class="px-3 py-1.5 rounded transition {{ app()->getLocale() == 'en' ? 'bg-blue-600 text-white' : 'text-gray-400 bg-gray-900 hover:text-white hover:bg-gray-800' }}">
                         EN
                     </a>
                 </div>
@@ -53,7 +53,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="relative z-10 mt-16 py-8 bg-gray-900/50 backdrop-blur-sm border-t border-gray-800">
+    <footer id="footer" class="relative z-10 mt-16 py-8 bg-gray-900/50 backdrop-blur-sm border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center text-gray-400">
                 <p class="mb-2">&copy; {{ date('Y') }} - My Portfolio</p>
