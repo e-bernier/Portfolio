@@ -10,7 +10,7 @@
                 {{ __("Hello, I'm Eloi") }}
             </h1>
             <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                {{ __("Computer Science student passionate about programming, whether it be web development, robotics or mobile applications") }}
+                {{ __("Computer Science student passionate about programming, whether it be web development, robotics, mobile applications or many others.") }}
             </p>
             <div class="flex justify-center gap-4">
                 <a href="javascript:void(0)" 
@@ -31,7 +31,9 @@
 
             @if($projects->isEmpty())
                 <div class="text-center py-12">
-                    <p class="text-gray-400 text-lg">No projects yet.</p>
+                    <p class="text-gray-400 text-lg">
+                        {{ __("No projects yet.") }}
+                    </p>
                 </div>
             @else
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -49,13 +51,14 @@
             <h2 class="text-4xl font-bold text-white mb-12 text-center">
                 {{ __("Other experiences") }}
             </h2>
-
             @if($experiences->isEmpty())
                 <div class="text-center py-12">
-                    <p class="text-gray-400 text-lg">No experiences yet.</p>
+                    <p class="text-gray-400 text-lg">
+                        {{ __("No experiences yet.") }}
+                    </p>
                 </div>
             @else
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flex flex-col gap-6">
                     @foreach($experiences as $experience)
                         <x-experience :experience="$experience" />
                     @endforeach

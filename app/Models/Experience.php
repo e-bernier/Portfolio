@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Experience extends Model
 {
     protected $fillable = [
-        'title',
+        'title_en', 'title_fr',
         'description_en', 'description_fr',
         'technologies',
         'project_date'
@@ -17,6 +17,13 @@ class Experience extends Model
         'technologies' => 'array',
         'project_date' => 'date'
     ];
+
+    // Accesseur pour le titre
+    public function getTitleAttribute()
+    {
+        $locale = app()->getLocale();
+        return $this->attributes["title_{$locale}"] ?? $this->attributes['title_en'];
+    }
 
     // Accesseur pour description
     public function getDescriptionAttribute()

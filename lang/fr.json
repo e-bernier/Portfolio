@@ -1,10 +1,12 @@
 {
   "Hello, I'm Eloi": "Bonjour, je suis Eloi",
-  "Computer Science student passionate about programming, whether it be web development, robotics or mobile applications": "Étudiant en informatique passionné par la programmation, qu'il s'agisse de développement web, de robotique ou d'applications mobiles",
+  "Computer Science student passionate about programming, whether it be web development, robotics, mobile applications or many others.": "Étudiant en informatique passionné par la programmation, qu'il s'agisse de développement web, de robotique, d'applications mobiles ou autres encore.",
   "View my projects": "Voir mes projets",
   "Contact me": "Me contacter",
   "My Projects": "Mes Projets",
   "No projects yet.": "Aucun projet pour le moment.",
+  "Other experiences": "Autres expériences",
+  "No experiences yet.": "Aucune expérience pour le moment.",
   "View project": "Voir le projet",
   "Skills": "Compétences",
   "View on GitHub": "Voir sur GitHub",
