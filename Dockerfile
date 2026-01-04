@@ -28,9 +28,6 @@ COPY . .
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
-RUN php artisan config:cache
-RUN php artisan route:cache
-RUN php artisan view:cache
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
@@ -43,8 +40,9 @@ COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
 # Expose port
 EXPOSE 80
 
-# Start Apache
-CMD php artisan config:cache && \
+# Start Apache with migrations
+CMD php artisan migrate:fresh --seed --force && \
+    php artisan config:cache && \
     php artisan route:cache && \
     php artisan view:cache && \
     apache2-foreground
