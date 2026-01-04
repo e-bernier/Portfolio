@@ -44,6 +44,8 @@ RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 # Configure Apache
 RUN a2enmod rewrite
 COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY docker/servername.conf /etc/apache2/conf-available/servername.conf
+RUN a2enconf servername
 
 # Expose port
 EXPOSE 80
