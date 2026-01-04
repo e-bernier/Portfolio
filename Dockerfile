@@ -20,6 +20,10 @@ RUN docker-php-ext-install pdo pdo_pgsql mbstring exif pcntl bcmath gd
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs
+
 # Set working directory
 WORKDIR /var/www/html
 
@@ -28,6 +32,10 @@ COPY . .
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+# Build frontend assets
+RUN npm install
+RUN npm run build
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
