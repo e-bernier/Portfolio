@@ -65,7 +65,7 @@
                 <div class="flex justify-center gap-4 text-sm">
                     <a href="https://github.com/e-bernier" target="_blank" class="hover:text-blue-400 transition">GitHub</a>
                     <a href="https://www.linkedin.com/in/eloi-bernier-13310037a/" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
-                    <a href="mailto:eloi.bernier@proton.me" class="hover:text-blue-400 transition">Contact</a>
+                    <a href="mailto:eloimarie.bernier@epfl.ch" class="hover:text-blue-400 transition">Contact</a>
                 </div>
             </div>
         </div>
